@@ -4,7 +4,7 @@ export default class Contact extends Component {
     render() {
         return (
             <div className="wow fadeInLeft" data-wow-duration = "0.6s">
-                <div id="contact" className="pb-3 mt-5">
+                <div id="contact" className="pb-3 mt-5 pt-3">
                     <div className="container mb-5 px-5 wow fadeInUp" data-wow-duration="0.5" data-wow-delay="0.3s" >
                         <h4 className="text-center heading">Contact</h4>
                         <h2 className="text-center">I'd Love To Hear From You.</h2>

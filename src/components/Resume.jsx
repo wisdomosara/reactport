@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Resume extends Component {
     render() {
         return (
-            <div id="resume" class="wow fadeInLeft mt-5" data-wow-duration="1.6s" data-wow-delay="0.2s" >
+            <div id="resume" class="wow fadeInLeft mt-5 pt-3" data-wow-duration="1.6s" data-wow-delay="0.2s" >
             <div class="container-fluid">
                 <h4 class="heading text-center">Resume</h4>
                 <h2 class="text-center">My Credentials</h2>
@@ -89,6 +89,34 @@ export default class Resume extends Component {
                     </div>
                 </div>
             </div>
+            <footer>
+                        <div className=" container">
+                            <div className="row footer-flex">
+                                <div className="order-sm-12 col-12 col-sm-6">
+                                    <div className="icon-holder1 wow fadeInRight">
+                                        <a href="https://facebook.com/wisdom.osara">
+                                            <img src="images/bx_bxl-facebook.png"></img>
+                                        </a>
+                                        <a href="https://sandbox.com">
+                                            <img src="images/cib_codesandbox.png"></img>
+                                        </a>
+                                        <a href="https://github.com/wisdomosara">
+                                            <img src="images/ant-design_github-outlined.png"></img>
+                                        </a>
+                                        <a href="https://twitter.com/OsaraWisdom">
+                                            <img src="images/ant-design_twitter-outlined.png"></img>
+                                        </a>
+                                        <a href="https://behance.com">
+                                            <img src="images/ant-design_behance-outlined.png"></img>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col-12  col-sm-6 order-sm-1 wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                                    <p><span>&copy; Osara Wisdom</span> <span>|</span><span>Designed </span> <span><strong>Adeleke</strong> </span></p>
+                                </div>
+                            </div>
+                        </div>
+                </footer>
         </div>
         )
     }

@@ -7,6 +7,7 @@ import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import Footer from './components/footer'
 import { BrowserRouter, Route, Switch } from 'react-router-dom' ;
 
 
@@ -14,47 +15,46 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom' ;
 
 export default class App extends Component { 
 
-  state={
-
+  state = {
+    clicked : false
   }
-
+  handlenav = () => {
+    this.setState(prev => ({
+      clicked : !prev.clicked
+    }))
+    console.log("clicked");
+    console.log(this.state.clicked)
+  }
+  handleclose = () => {
+    this.setState(prev => ({
+      clicked : !prev.clicked
+    }))
+  }
   componentDidMount() {
-    setTimeout(function() {
+    window.onload = function() {
       document.querySelector(".preload").classList.add("hide");
-      document.querySelectorAll(".nav-item").forEach(link => link.addEventListener("click", function() {
-        clicked = !clicked;
-        
-        if(clicked) {
-          img.src = "images/icons8-delete-30.png"
-          console.log("open")
-      }else {
-      img.src = "images/hamburger.png"
-        }
+    }
+    let navLinks = document.querySelectorAll(".nav-item")
+    navLinks.forEach(function(link) {
+      link.addEventListener("click", function() {
+          navLinks.forEach(function(links) {
+              links.classList.remove("active");
+          })
+          link.classList.add("active");
+          
       })
-      )
-    }, 5000)
+  })
+    if(this.state.clicked) {
+      console.log("we have it")
+    }
     
-    console.log("hidee")
-    let hand = document.querySelector(".hand")
-    let img = document.querySelector(".hand img")
-    let clicked = false;
-
-    hand.addEventListener("click", function() {
-    clicked = !clicked
-  
-    if(clicked) {
-        img.src = "images/icons8-delete-30.png"
-        console.log("open")
-    }else {
-    img.src = "images/hamburger.png"
-      }
-    })
   }
   render() {
+    
     return (
       <BrowserRouter>
         <div>
-        <NavBar />
+        <NavBar handlenav = {this.handlenav} state = {this.state}/>
             <div class="preload">
                 <img src="images/Ripple-2.6s-231px.svg" width=""></img>
                 <h1>Welcome...</h1>
@@ -67,6 +67,7 @@ export default class App extends Component {
               <Route exact path="/services" component={Services}></Route>
               <Route exact path="/contact" component={Contact}></Route>
             </Switch>
+        <Footer />
         </div>
       </BrowserRouter>
       

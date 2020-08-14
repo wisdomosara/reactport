@@ -1,15 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 
 export default class About extends Component {
     render() {
         return (
-            <div id="About" class="container mb-4 rounded wow fadeInLeft pb-4 mt-5" data-wow-duration="1s" data-wow-delay="0.5s" >
+            <div id="About" class="container mb-4 rounded wow fadeInLeft pb-4 mt-5 pt-3" data-wow-duration="1s" data-wow-delay="0.5s" >
                     <h4 class="text-center mb-2 heading">About</h4>
                     <h1 class="text-center mb-5">Let me Introduce Myself</h1>
                     <div class="container">
                     <div class="row mb-4">
-                        <div class="col-12 col-md-6 mb-4">
-                            <img src="images/prof.png" width="100%"></img>
+                        <div class="col-12 col-md-6 mb-4 profile-pic">
+                            <img src="images/IMG_20200528_112110_556_1595542028515.jpg" width="100%"></img>
                         </div>
                         <div class="col-12 about-text col-md-6">
                             <p>I'm a front-end Developer who loves to make things look perfect. I create pixel perfect webpages that are repsonsive on all screensizes (small, big and Extra large screen sizes). I'm also a Petroleum Engineer. I love learning new things and quickly too. And i love to code >_</p>
@@ -18,78 +19,12 @@ export default class About extends Component {
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="profile col-12  col-md-6 mb-5 wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s"  >
+                            <div class="profile col-12  col-md-6 mb-2 wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.3s"  >
                                 <div class="skills-text">
                                     <h3 class="mb-4 text-center text-md-left">PROFILE</h3>
-                                <p class="mb-5">I have a Degree in Petroleum Engineering from the great University of Benin. I'm a self taught Front End Developer with sound knowledge on Front End technologies. I have sound knowledge on ReactJs, HTML5, CSS3, SASS, JQUERY, VANILLA JAVASCRIPT, RESTFUL APIS and more.
-                                </p>
-                                </div>
-                                <div class="details wow fadeInDown" data-wow-duration="0.5" data-wow-delay="0.5s" >
-                                    <h3 class="mb-2">FULLNAME:</h3>
-                                    <p class="mb-5">Osara Wisdom</p>
-                                    <h3 class="mb-2">EMAIL:</h3>
-                                    <p class="mb-5">wisdomosara@email.com</p>
-                                </div>
-                            </div>
-                            <div class="skills col-12  col-md-6 wow fadeInUp" data-wow-duration="0.5" data-wow-delay="0.2s" >
-                                <div class="skills-text">
-                                    <h3 class="mb-4">SKILLS</h3>
-                                    <ul>
-                                    <li>Communication</li>
-                                    <li>Teamwork</li>
-                                    <li>Self- motivation</li>
-                                    <li>Marketing</li>
-                                </ul>
-                                </div>
-                                
-                                <div class="d-flex justify-content-between">
-                                    <h3>HTML5</h3>
-                                    <p>99%</p>
-                                </div>
-                                <div class="progress mb-5">
-                                    <div class=" bar1"></div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <h3>CSS3</h3>
-                                    <p>90%</p>
-                                </div>
-                                <div class="progress mb-5">
-                                <div class=" bar2"></div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <h3>VANILLA JAVASCRIPT</h3>
-                                    <p>75%</p>
-                                </div>
-                                    <div class="progress mb-5">
-                                    <div class=" bar3"></div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <h3>REACTJS</h3>
-                                    <p>70%</p>
-                                    </div>
-                                    <div class="progress mb-5">
-                                    <div class=" bar4"></div>
-                                    </div>
-                                <div class="d-flex justify-content-between">
-                                    <h3>BOOTSTRAP</h3>
-                                    <p>80%</p>
-                                </div>
-                                <div class="progress mb-5">
-                                    <div class=" bar5"></div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <h3>JQUERY</h3>
-                                    <p>80%</p>
-                                </div>
-                                <div class="progress mb-5">
-                                    <div class=" bar6"></div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <h3>RESTFul APIs</h3>
-                                    <p>80%</p>
-                                </div>
-                                <div class="progress mb-5">
-                                    <div class=" bar7"></div>
+                                    <p class="mb-2">I have a Degree in Petroleum Engineering from the great University of Benin. I'm a self taught Front End Developer with sound knowledge on Front End technologies. I have sound knowledge on ReactJs, HTML5, CSS3, SASS, JQUERY, VANILLA JAVASCRIPT, RESTFUL APIS and more.
+                                    </p>
+                                    <p>Click <button class="btn btn-sm"><Link to="/portfolio">Here</Link> </button> to view my Portfolio</p>
                                 </div>
                             </div>
                         </div>
@@ -102,6 +37,34 @@ export default class About extends Component {
                             </div>
                         </div>
                     </div>
+                    <footer>
+                        <div className=" container">
+                            <div className="row footer-flex">
+                                <div className="order-sm-12 col-12 col-sm-6">
+                                    <div className="icon-holder1 wow fadeInRight">
+                                        <a href="https://facebook.com/wisdom.osara">
+                                            <img src="images/bx_bxl-facebook.png"></img>
+                                        </a>
+                                        <a href="https://sandbox.com">
+                                            <img src="images/cib_codesandbox.png"></img>
+                                        </a>
+                                        <a href="https://github.com/wisdomosara">
+                                            <img src="images/ant-design_github-outlined.png"></img>
+                                        </a>
+                                        <a href="https://twitter.com/OsaraWisdom">
+                                            <img src="images/ant-design_twitter-outlined.png"></img>
+                                        </a>
+                                        <a href="https://behance.com">
+                                            <img src="images/ant-design_behance-outlined.png"></img>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="col-12  col-sm-6 order-sm-1 wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                                    <p><span>&copy; Osara Wisdom</span> <span>|</span><span>Designed </span> <span><strong>Adeleke</strong> </span></p>
+                                </div>
+                            </div>
+                        </div>
+                </footer>
                 </div>
         )
     }

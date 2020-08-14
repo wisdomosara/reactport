@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 
 export default class Home extends Component {
@@ -11,7 +12,7 @@ export default class Home extends Component {
                         <h1 class="text-center element mb-3 px-3 wow fadeInDown" data-wow-duration="0.5" data-wow-delay="1.2s" >I’m Wisdom Osara</h1>
                             <p class="text-center front mb-2 wow fadeInUp" data-wow-duration="0.5" data-wow-delay="1.2s" >Front-end Developer</p>
                         <div class="col text-center mt-2 mb-5 wow fadeInUp">
-                            <button class="btn btn-default more"><a href="#About">MORE ABOUT ME</a></button>
+                            <button class="btn btn-default more"><Link to="/about">MORE ABOUT ME</Link></button>
                         </div>
                     </div>
                     <div class="icon-holder col text-center">
