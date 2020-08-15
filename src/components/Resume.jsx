@@ -83,7 +83,7 @@ export default class Resume extends Component {
                             <div class="exp-right">
                                 <h4>FreeCodeCamp.org</h4>
                                 <div class="line mb-4"></div>
-                            <p>After getting my responsive web design certificate, I had a little hold up in my learning because of some stuffs beyond my control. I got back to programming some months later. You can view this Certificate <a target="blank" href="https://www.freecodecamp.org/certification/fcce0659087-335e-4c7f-bf86-40a387137078/javascript-algorithms-and-data-structures">here</a></p>
+                            <p>I got the Javascript Data Structure and Algorithms certificate. Learnt basic to some advanced Javascript concepts. You can view this Certificate <a target="blank" href="https://www.freecodecamp.org/certification/fcce0659087-335e-4c7f-bf86-40a387137078/javascript-algorithms-and-data-structures">here</a></p>
                             </div>
                         </div>
                     </div>

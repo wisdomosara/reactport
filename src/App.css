@@ -368,7 +368,6 @@ p{
     padding-top:40px
 }
 #resume a{
-    color: #6F2CFF;
     text-decoration: none;
 }
 .exp-middle{
@@ -423,6 +422,11 @@ p{
 .exp-right p{
     font-size: 16px;
     color: #A9A9A9 !important;
+}
+.exp-right a{
+    background-color: #6F2CFF;
+    color: white !important;
+    padding: 3px
 }
 .portfolio-text p{
     font-size:16PX;
