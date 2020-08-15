@@ -7,8 +7,9 @@ import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Services from './components/Services';
 import Contact from './components/Contact';
-import Footer from './components/footer'
+
 import { BrowserRouter, Route, Switch } from 'react-router-dom' ;
+import ScrollToTop from './components/ScrollToTop';
 
 
 
@@ -44,6 +45,7 @@ export default class App extends Component {
     
     return (
       <BrowserRouter>
+        <ScrollToTop />
         <div>
         <NavBar handlenav = {this.handlenav} state = {this.state}/>
             <div class="preload">
@@ -58,7 +60,7 @@ export default class App extends Component {
               <Route exact path="/services" component={Services}></Route>
               <Route exact path="/contact" component={Contact}></Route>
             </Switch>
-        <Footer />
+        
         </div>
       </BrowserRouter>
       

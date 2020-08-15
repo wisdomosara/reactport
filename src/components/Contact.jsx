@@ -44,7 +44,7 @@ export default class Contact extends Component {
                     </div>
                 </div>
                 <footer>
-                        <div className=" container">
+                        <div className=" container mt-4">
                             <div className="row footer-flex">
                                 <div className="order-sm-12 col-12 col-sm-6">
                                     <div className="icon-holder1 wow fadeInRight">
@@ -66,7 +66,7 @@ export default class Contact extends Component {
                                     </div>
                                 </div>
                                 <div className="col-12  col-sm-6 order-sm-1 wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                                    <p><span>&copy; Osara Wisdom</span></p>
+                                    <p><span>&copy; Wisdom Osara</span></p>
                                 </div>
                             </div>
                         </div>

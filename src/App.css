@@ -77,12 +77,14 @@ nav{
      font-size: 30px !important;
      font-weight: bolder;
      margin-left: 5% !important;
-     border: none !important
+     border: none !important;
+     color:white
  }
  .Name{
      text-decoration: none !important;
      color:white !important
  }
+
 .preload{
     display: flex;
     justify-content: center;

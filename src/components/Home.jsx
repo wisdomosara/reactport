@@ -6,7 +6,6 @@ export default class Home extends Component {
     render() {
         return (
             <div className="mainn wow fadeInLeft" data-wow-duration="1.2s">
-                    
                     <div class="hero-text ">
                         <h4 class="text-center wow fadeInDown" data-wow-duration="0.5" data-wow-delay="0.6s" >Hello</h4>
                         <h1 class="text-center element mb-3 px-3 wow fadeInDown" data-wow-duration="0.5" data-wow-delay="1.2s" >I’m Wisdom Osara</h1>
