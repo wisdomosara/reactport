@@ -52,10 +52,15 @@ h1,h2,h3,h4{
     color: white;
     text-decoration: none;
 }
-nav{
-    position: fixed !important;
-    left:0;
+.nav-head {
+    width:100%;
+    position: fixed;
+    height: 56px;
     top:0;
+    z-index: 100
+}
+nav{
+    
     min-width: 100%;
     color:white !important;
     z-index: 100 !important;
@@ -71,7 +76,8 @@ nav{
  .logo{
      font-size: 30px !important;
      font-weight: bolder;
-     margin-left: 5% !important
+     margin-left: 5% !important;
+     border: none !important
  }
  .Name{
      text-decoration: none !important;
@@ -157,7 +163,7 @@ p{
     color: white !important;
     text-decoration: white !important;
 }
-.active a i{
+.active i{
     color: #6F2CFF !important;
 }
 .hero-text{

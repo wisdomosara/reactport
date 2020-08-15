@@ -85,7 +85,7 @@ export default class Portfolio extends Component {
                                     </div>
                                 </div>
                                 <div className="col-12  col-sm-6 order-sm-1 wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                                    <p><span>&copy; Osara Wisdom</span> <span>|</span><span>Designed </span> <span><strong>Adeleke</strong> </span></p>
+                                    <p><span>&copy; Osara Wisdom</span></p>
                                 </div>
                             </div>
                         </div>
